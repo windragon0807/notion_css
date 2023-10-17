@@ -11,7 +11,7 @@
    /* 코드블럭 그림자 */
    filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.15));
    background-color: #282C34 !important;
-   caret-color: #5FAAE8;
+   caret-color: #5FAAE8 !important;
  }
   
   /*
