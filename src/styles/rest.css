@@ -1,0 +1,92 @@
+/* 📄 이미지 & 동영상 영역 */
+.notion-selectable.notion-image-block
+> div
+> div[style*="display: flex;"]
+> .notion-cursor-default
+{
+    border-radius: 15px;
+    margin-bottom: 10px;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.15));
+}
+
+.notion-selectable.notion-video-block
+> div > div > div {
+  border-radius: 10px !important;
+}
+
+/* 📄 제목 1, 2, 3 텍스트 그림자 설정 및 상하단 마진 설정 */
+div[class*="header-block"]
+> div[style*="display: flex;"]
+> .notranslate
+{
+    /* 텍스트 그림자 설정 */
+    text-shadow: 8px 5px 4px rgb(204 204 204 / 90%);
+    /* 상단, 하단 마진 설정 */
+    margin-top: 5px !important;
+    margin-bottom: 10px !important;
+}
+
+/* 📄 토글 제목 1, 2, 3 텍스트 그림자 설정 및 하단 마진 설정 */
+div[class*="header-block"]
+> div
+> div
+> div:nth-child(2)
+> div
+> .notranslate
+{
+    /* 텍스트 그림자 설정 */
+    text-shadow: 8px 5px 4px rgb(204 204 204 / 90%);
+    /* 하단 마진 설정 */    
+    margin-bottom: 10px !important;
+}
+
+/* 📄 팝업 댓글 창 */
+.notion-margin-discussion-item
+{
+    /* 모서리 말풍선 모양으로 설정 */
+    border-radius: 25px 25px 0 25px !important;
+}
+
+/* 📄 콜아웃 영역 */
+.notion-selectable.notion-callout-block
+> div[style*="display: flex;"]
+> div
+{
+    border: 2px solid transparent;
+  	border-radius: 15px !important;
+  	background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)) padding-box,
+        linear-gradient(90deg, #FDDE5C, #F8AB5E, #F56A62, #A176C8, #759BEB, #65BEB3, #70DB96) border-box
+        !important;
+    filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.15));
+  	padding: 7px 15px  !important;
+    margin-bottom: 3px !important;
+}
+
+/* 📄 사이드 바 영역 */
+.notion-sidebar-container {
+    background: white !important;
+    box-shadow: 0 2px 1px 0 rgb(0 0 0 / 16%), 0 2px 7px 0 rgb(0 0 0 / 12%) !important;
+}
+
+/* 📄 검색, 업데이트, 설정과 멤버 hover 시 글씨 굵기 변경 */
+.notion-sidebar
+> :nth-child(3)
+> div
+> div:nth-child(2)
+> div:hover {
+    font-weight: 700 !important;
+}
+
+/* 📄 팀스페이스 생성, 템플릿, 가져오기, 휴지통 hover 시 글씨 굵기 변경 */
+.notion-scroller
+> nav
+> div[style*="flex-grow: 0;"]
+> div:hover {
+      font-weight: 700 !important;
+}
+
+/* 📄  초록색 글자 색상 변경 */
+span[style*="color:rgba(68, 131, 97, 1);"] {
+    color: #009a87 !important;
+}
