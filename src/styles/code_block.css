@@ -47,12 +47,18 @@
    );
    background-clip: text;
    -webkit-background-clip: text;
-   font-size: 35px;
-   width: 54px;
    line-height: 0.5;
    position: absolute;
+   /* Mac OS */
+   font-size: 35px;
+   width: 54px;
    top: 12px;
    left: 12px;
+   /* Windows */
+   /* font-size: 65px;
+   width: 80px;
+   top: 5px;
+   left: 5px; */
  }
   
   /*
