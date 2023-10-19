@@ -2,400 +2,304 @@
 /*
  * 코드블럭 [전체] 영역
  */
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- {
-   border-radius: 18px !important;
-   margin-bottom: 12px !important;
-   /* 코드블럭 그림자 */
-   filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.15));
-   background-color: #282C34 !important;
-   caret-color: #5FAAE8 !important;
- }
-  
-  /*
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"] {
+  border-radius: 18px !important;
+  margin-bottom: 12px !important;
+  /* 코드블럭 그림자 */
+  filter: drop-shadow(0px 6px 5px rgba(0, 0, 0, 0.15));
+  background-color: #282C34 !important;
+  caret-color: #5FAAE8 !important;
+}
+
+/*
    * 코드블럭 [코드] 영역
    */
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[style*="flex-grow: 1;"]
- > :nth-child(1)
- .notranslate
- {
-   /* 글꼴로 인한 tab size 변경 */
-   tab-size: 4 !important;
- }
- .notion-code-block.line-numbers
- {
-   position: relative;
- }
-  
-  
-  /*
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[style*="flex-grow: 1;"]> :nth-child(1) .notranslate {
+  /* 글꼴로 인한 tab size 변경 */
+  tab-size: 4 !important;
+}
+
+.notion-code-block.line-numbers {
+  position: relative;
+}
+
+
+/*
    * 코드블럭 왼쪽 상단 Apple Design 영역
    */
- .notion-code-block.line-numbers:before
- {
-   content: "•••";
-   color: transparent;
-   background-image: linear-gradient(
-     90deg,
-     #FF5F56, #FF5F56 33%,
-     #FFBD2E 33%, #FFBD2E 66%,
-     #27C93F 66%, #27C93F
-   );
-   background-clip: text;
-   -webkit-background-clip: text;
-   line-height: 0.5;
-   position: absolute;
-   /* Mac OS */
-   font-size: 35px;
-   width: 54px;
-   top: 12px;
-   left: 12px;
-   /* Windows */
-   /* font-size: 65px;
+.notion-code-block.line-numbers:before {
+  content: "•••";
+  color: transparent;
+  background-image: linear-gradient(90deg,
+      #FF5F56, #FF5F56 33%,
+      #FFBD2E 33%, #FFBD2E 66%,
+      #27C93F 66%, #27C93F);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 0.5;
+  position: absolute;
+  /* Mac OS */
+  font-size: 35px;
+  width: 54px;
+  top: 12px;
+  left: 12px;
+  /* Windows */
+  /* font-size: 65px;
    letter-spacing: -20px;
    width: 80px;
    top: 5px;
    left: 5px; */
- }
-  
-  /*
+}
+
+/*
    * 코드블럭 상단, 하단 padding 변경
    */
- .notion-code-block.line-numbers > div
- {
-   padding-top: 44px !important;
-   padding-bottom: 20px !important;
- }
-  
- /*
+.notion-code-block.line-numbers>div {
+  padding-top: 44px !important;
+  padding-bottom: 20px !important;
+}
+
+/*
   * 코드블럭 [도구] 영역
   */
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- {
-   /* 캡션 영역에 묻혀서 클릭되지 않은 도구 영역 클릭 가능하도록 설정 */
-   z-index: 1 !important;
-   /* 위치조정 */
-   top: 15px !important;
-   right: 15px !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > div[role="button"]
- {
-   background-color: transparent !important;
-   color: #ABB2BF !important;
-   border: 1px solid #ABB2BF;
-   padding: 12px 8px !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > div[role="button"]
- > svg
- {
-   fill: #ABB2BF !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(1)
- {
-   border-radius: 6px 2px 2px 6px !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(2)
- {
-   border-radius: 2px  !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(3)
- {
-   border-radius: 2px 6px 6px 2px !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(1):hover
- {
-   color: #5FAAE8 !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(1):hover svg
- {
-   fill: #5FAAE8 !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(2):hover
- {
-   color: #5FAAE8 !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 3px;"]
- > div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]
- > :nth-child(3):hover svg
- {
-   fill: #5FAAE8 !important;
- }
- 
-  
-  /*
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"] {
+  /* 캡션 영역에 묻혀서 클릭되지 않은 도구 영역 클릭 가능하도록 설정 */
+  z-index: 1 !important;
+  /* 위치조정 */
+  top: 15px !important;
+  right: 15px !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]>div[role="button"] {
+  background-color: transparent !important;
+  color: #ABB2BF !important;
+  border: 1px solid #ABB2BF;
+  padding: 12px 8px !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]>div[role="button"]>svg {
+  fill: #ABB2BF !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(1) {
+  border-radius: 6px 2px 2px 6px !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(2) {
+  border-radius: 2px !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(3) {
+  border-radius: 2px 6px 6px 2px !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(1):hover {
+  color: #5FAAE8 !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(1):hover svg {
+  fill: #5FAAE8 !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(2):hover {
+  color: #5FAAE8 !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 3px;"]>div[style*="color: rgba(55, 53, 47, 0.65); display: flex;"]> :nth-child(3):hover svg {
+  fill: #5FAAE8 !important;
+}
+
+
+/*
    * 코드블럭 [언어선택] 영역
    */
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 8px;"]
- {
-   /* 위치조정 */
-   top: 50px !important;
-   /* flex로 인해 코드 라인 첫 줄이 클릭되지 않는 이슈 해결 */
-   left: unset !important;
-   right: 20px !important;
-   border: 1px solid #ABB2BF;
-   border-radius: 8px;
-   padding: 4px 0px 4px 4px;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 8px;"]
- > div[role="button"]
- {
-   color: #ABB2BF !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 8px;"]
- > div[role="button"]
- > svg
- {
-   fill: #ABB2BF !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[role="figure"]
- > div[style*="position: absolute; top: 8px;"]:hover div[role="button"]
- {
-   color: #5FAAE8 !important;
- }
-  
-  /*
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 8px;"] {
+  /* 위치조정 */
+  top: 50px !important;
+  /* flex로 인해 코드 라인 첫 줄이 클릭되지 않는 이슈 해결 */
+  left: unset !important;
+  right: 20px !important;
+  border: 1px solid #ABB2BF;
+  border-radius: 8px;
+  padding: 4px 0px 4px 4px;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 8px;"]>div[role="button"] {
+  color: #ABB2BF !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 8px;"]>div[role="button"]>svg {
+  fill: #ABB2BF !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[role="figure"]>div[style*="position: absolute; top: 8px;"]:hover div[role="button"] {
+  color: #5FAAE8 !important;
+}
+
+/*
    * 코드블럭 [캡션] 영역
    */
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[style*="flex-grow: 1;"]
- > :nth-child(4)
- {
-   /* 아래에 있던 위치를 코드블럭 상단 가운데로 이동 */
-   position: absolute;
-   top: 10px;
-   display: flex;
-   width: 100% !important;
-   justify-content: center !important;
-   align-items: center !important;
-   background: transparent !important;
-   padding: 0 !important;
- }
- .notion-selectable.notion-code-block
- > div[style="display: flex;"]
- > div[style*="flex-grow: 1;"]
- > :nth-child(4)
- > div
- {
-   /* 글자 가운데 정렬 */
-   text-align: center;
-   width: 300px !important;
-   font-weight: 700;
-   color: #ABB2BF !important;
- }
-  
- /*
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[style*="flex-grow: 1;"]> :nth-child(4) {
+  /* 아래에 있던 위치를 코드블럭 상단 가운데로 이동 */
+  position: absolute;
+  top: 10px;
+  display: flex;
+  width: 100% !important;
+  justify-content: center !important;
+  align-items: center !important;
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.notion-selectable.notion-code-block>div[style="display: flex;"]>div[style*="flex-grow: 1;"]> :nth-child(4)>div {
+  /* 글자 가운데 정렬 */
+  text-align: center;
+  width: 300px !important;
+  font-weight: 700;
+  color: #ABB2BF !important;
+  caret-color: #5FAAE8 !important;
+}
+
+/*
   * 코드블럭 코드 키워드 색상
   */
- /* 🔴 빨간색 */
- .notion-selectable.notion-code-block span[class="token script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token class-name tag"],
- .notion-selectable.notion-code-block span[class="token parameter"],
- .notion-selectable.notion-code-block span[class="token unit"],
- .notion-selectable.notion-code-block span[class="token literal-property property"],
- .notion-selectable.notion-code-block span[class="token spread tag"],
- .notion-selectable.notion-code-block span[class="token keyword interpolation template-string"],
- .notion-selectable.notion-code-block span[class="token unit atrule"],
- .notion-selectable.notion-code-block span[class="token selector"],
- .notion-selectable.notion-code-block span[class="token variable"],
- .notion-selectable.notion-code-block span[class="token atrule language-css style"],
- .notion-selectable.notion-code-block span[class="token unit language-css style"],
- .notion-selectable.notion-code-block span[class="token entity named-entity"]
- {
-   color: #E06C75;
-   background-color: transparent;
- }
-  
- /* 🟠 주황색 */
- .notion-selectable.notion-code-block span[class="token attr-name tag"],
- .notion-selectable.notion-code-block span[class="token class selector"],
- .notion-selectable.notion-code-block span[class="token hexcode color"],
- .notion-selectable.notion-code-block span[class="token number script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token punctuation attribute selector"],
- .notion-selectable.notion-code-block span[class="token attr-name attribute selector"],
- .notion-selectable.notion-code-block span[class="token color"],
- .notion-selectable.notion-code-block span[class="token keyword script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token boolean"],
- .notion-selectable.notion-code-block span[class="token boolean script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token number interpolation template-string"],
- .notion-selectable.notion-code-block span[class="token number atrule"],
- .notion-selectable.notion-code-block span[class="token number color"],
- .notion-selectable.notion-code-block span[class="token number language-css style"],
- .notion-selectable.notion-code-block span[class="token class selector language-css style"],
- .notion-selectable.notion-code-block span[class="token language-css style"]
- {
-   color: #D19A66;
- }
-  
- /* 🟡 노란색 */
- .notion-selectable.notion-code-block span[class="token builtin"],
- .notion-selectable.notion-code-block span[class="token tag"],
- .notion-selectable.notion-code-block span[class="token interpolation template-string script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token class-name"],
- .notion-selectable.notion-code-block span[class="token builtin class-name"],
- .notion-selectable.notion-code-block span[class="token class-name tag"],
- .notion-selectable.notion-code-block span[class="token generic class-name generic-function"],
- .notion-selectable.notion-code-block span[class="token interpolation template-string"],
- .notion-selectable.notion-code-block span[class="token builtin generic class-name generic-function"],
- .notion-selectable.notion-code-block span[class="token builtin script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token constant"],
- .notion-selectable.notion-code-block span[class="token keyword generic class-name generic-function"],
- .notion-selectable.notion-code-block span[class="token constant script language-javascript tag"]
- {
-   color: #E5C07B;
- }
-  
-  /* 🟢 초록색 */
- .notion-selectable.notion-code-block span[class="token string"],
- .notion-selectable.notion-code-block span[class="token punctuation attr-value tag"],
- .notion-selectable.notion-code-block span[class="token attr-value tag"],
- .notion-selectable.notion-code-block span[class="token string script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token string template-string script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token attr-value attribute selector"],
- .notion-selectable.notion-code-block span[class="token template-punctuation string template-string"],
- .notion-selectable.notion-code-block span[class="token string template-string"],
- .notion-selectable.notion-code-block span[class="token string-property property"],
- .notion-selectable.notion-code-block span[class="token string interpolation template-string script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token string template-string interpolation"],
- .notion-selectable.notion-code-block span[class="token string url"]
- {
-   color: #98C379;
-   background-color: transparent;
- }
-  
-  /* 🔵 파란색 */
- .notion-selectable.notion-code-block span[class="token function"],
- .notion-selectable.notion-code-block span[class="token function-variable function"],
- .notion-selectable.notion-code-block span[class="token function script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token function generic-function"]
- {
-   color: #5FAAE8;
- }
-  
-  /* 🟣 보라색 */
- .notion-selectable.notion-code-block span[class="token keyword"],
- .notion-selectable.notion-code-block span[class="token operator interpolation template-string"],
- .notion-selectable.notion-code-block span[class="token rule atrule"],
- .notion-selectable.notion-code-block span[class="token punctuation url"],
- .notion-selectable.notion-code-block span[class="token rule atrule language-css style"]
- {
-   color: #C678DD;
-   background-color: transparent;
- }
-  
- /* 🟤 갈색 */
- .notion-selectable.notion-code-block span[class="token number"]
- {
-   color: #D19A66;
- }
-  
-  /* ⚪ 회색 */
- .notion-selectable.notion-code-block span[class=""],
- .notion-selectable.notion-code-block span[class="token punctuation tag"],
- .notion-selectable.notion-code-block span[class="token punctuation script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token interpolation-punctuation punctuation interpolation template-string script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token property"],
- .notion-selectable.notion-code-block span[class="token operator script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token operator attribute selector"],
- .notion-selectable.notion-code-block span[class="token plain-text"],
- .notion-selectable.notion-code-block span[class="token operator generic class-name generic-function"],
- .notion-selectable.notion-code-block span[class="token punctuation generic class-name generic-function"],
- .notion-selectable.notion-code-block span[class="token punctuation spread tag"],
- .notion-selectable.notion-code-block span[class="token operator spread tag"],
- .notion-selectable.notion-code-block span[class="token punctuation atrule"],
- .notion-selectable.notion-code-block span[class="token property atrule"],
- .notion-selectable.notion-code-block span[class="token combinator selector"],
- .notion-selectable.notion-code-block span[class="token selector language-css style"],
- .notion-selectable.notion-code-block span[class="token property language-css style"]
- {
-   color: #ABB2BF;
-   background-color: transparent;
- }
-  
-  /* 🎨 짙은 회색 (주석색) */
- .notion-selectable.notion-code-block span[class="token comment tag"]
-  {
-   color: #708090;
-  }
-  
-  /* 🎨 민트색 */
- .notion-selectable.notion-code-block span[class="token operator"],
- .notion-selectable.notion-code-block span[class="token script-punctuation punctuation script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token punctuation attr-equals attr-value tag"],
- .notion-selectable.notion-code-block span[class="token pseudo-class selector"],
- .notion-selectable.notion-code-block span[class="token pseudo-element selector"],
- .notion-selectable.notion-code-block span[class="token operator interpolation template-string script language-javascript tag"],
- .notion-selectable.notion-code-block span[class="token function color"],
- .notion-selectable.notion-code-block span[class="token function url"],
- .notion-selectable.notion-code-block span[class="token function language-css style"]
- {
-   color: #56B6C2;
-   background: transparent;
- }
-  
-  /* 🎨 배경 투명색 */
- .notion-selectable.notion-code-block span[class="token operator interpolation template-string script language-javascript tag"]
- {
-   background-color: transparent;
- }
+/* 🔴 빨간색 */
+.notion-selectable.notion-code-block span[class="token script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token class-name tag"],
+.notion-selectable.notion-code-block span[class="token parameter"],
+.notion-selectable.notion-code-block span[class="token unit"],
+.notion-selectable.notion-code-block span[class="token literal-property property"],
+.notion-selectable.notion-code-block span[class="token spread tag"],
+.notion-selectable.notion-code-block span[class="token keyword interpolation template-string"],
+.notion-selectable.notion-code-block span[class="token unit atrule"],
+.notion-selectable.notion-code-block span[class="token selector"],
+.notion-selectable.notion-code-block span[class="token variable"],
+.notion-selectable.notion-code-block span[class="token atrule language-css style"],
+.notion-selectable.notion-code-block span[class="token unit language-css style"],
+.notion-selectable.notion-code-block span[class="token entity named-entity"] {
+  color: #E06C75;
+  background-color: transparent;
+}
+
+/* 🟠 주황색 */
+.notion-selectable.notion-code-block span[class="token attr-name tag"],
+.notion-selectable.notion-code-block span[class="token class selector"],
+.notion-selectable.notion-code-block span[class="token hexcode color"],
+.notion-selectable.notion-code-block span[class="token number script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token punctuation attribute selector"],
+.notion-selectable.notion-code-block span[class="token attr-name attribute selector"],
+.notion-selectable.notion-code-block span[class="token color"],
+.notion-selectable.notion-code-block span[class="token keyword script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token boolean"],
+.notion-selectable.notion-code-block span[class="token boolean script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token number interpolation template-string"],
+.notion-selectable.notion-code-block span[class="token number atrule"],
+.notion-selectable.notion-code-block span[class="token number color"],
+.notion-selectable.notion-code-block span[class="token number language-css style"],
+.notion-selectable.notion-code-block span[class="token class selector language-css style"],
+.notion-selectable.notion-code-block span[class="token language-css style"] {
+  color: #D19A66;
+}
+
+/* 🟡 노란색 */
+.notion-selectable.notion-code-block span[class="token builtin"],
+.notion-selectable.notion-code-block span[class="token tag"],
+.notion-selectable.notion-code-block span[class="token interpolation template-string script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token class-name"],
+.notion-selectable.notion-code-block span[class="token builtin class-name"],
+.notion-selectable.notion-code-block span[class="token class-name tag"],
+.notion-selectable.notion-code-block span[class="token generic class-name generic-function"],
+.notion-selectable.notion-code-block span[class="token interpolation template-string"],
+.notion-selectable.notion-code-block span[class="token builtin generic class-name generic-function"],
+.notion-selectable.notion-code-block span[class="token builtin script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token constant"],
+.notion-selectable.notion-code-block span[class="token keyword generic class-name generic-function"],
+.notion-selectable.notion-code-block span[class="token constant script language-javascript tag"] {
+  color: #E5C07B;
+}
+
+/* 🟢 초록색 */
+.notion-selectable.notion-code-block span[class="token string"],
+.notion-selectable.notion-code-block span[class="token punctuation attr-value tag"],
+.notion-selectable.notion-code-block span[class="token attr-value tag"],
+.notion-selectable.notion-code-block span[class="token string script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token string template-string script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token attr-value attribute selector"],
+.notion-selectable.notion-code-block span[class="token template-punctuation string template-string"],
+.notion-selectable.notion-code-block span[class="token string template-string"],
+.notion-selectable.notion-code-block span[class="token string-property property"],
+.notion-selectable.notion-code-block span[class="token string interpolation template-string script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token string template-string interpolation"],
+.notion-selectable.notion-code-block span[class="token string url"] {
+  color: #98C379;
+  background-color: transparent;
+}
+
+/* 🔵 파란색 */
+.notion-selectable.notion-code-block span[class="token function"],
+.notion-selectable.notion-code-block span[class="token function-variable function"],
+.notion-selectable.notion-code-block span[class="token function script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token function generic-function"] {
+  color: #5FAAE8;
+}
+
+/* 🟣 보라색 */
+.notion-selectable.notion-code-block span[class="token keyword"],
+.notion-selectable.notion-code-block span[class="token operator interpolation template-string"],
+.notion-selectable.notion-code-block span[class="token rule atrule"],
+.notion-selectable.notion-code-block span[class="token punctuation url"],
+.notion-selectable.notion-code-block span[class="token rule atrule language-css style"] {
+  color: #C678DD;
+  background-color: transparent;
+}
+
+/* 🟤 갈색 */
+.notion-selectable.notion-code-block span[class="token number"] {
+  color: #D19A66;
+}
+
+/* ⚪ 회색 */
+.notion-selectable.notion-code-block span[class=""],
+.notion-selectable.notion-code-block span[class="token punctuation tag"],
+.notion-selectable.notion-code-block span[class="token punctuation script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token interpolation-punctuation punctuation interpolation template-string script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token property"],
+.notion-selectable.notion-code-block span[class="token operator script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token operator attribute selector"],
+.notion-selectable.notion-code-block span[class="token plain-text"],
+.notion-selectable.notion-code-block span[class="token operator generic class-name generic-function"],
+.notion-selectable.notion-code-block span[class="token punctuation generic class-name generic-function"],
+.notion-selectable.notion-code-block span[class="token punctuation spread tag"],
+.notion-selectable.notion-code-block span[class="token operator spread tag"],
+.notion-selectable.notion-code-block span[class="token punctuation atrule"],
+.notion-selectable.notion-code-block span[class="token property atrule"],
+.notion-selectable.notion-code-block span[class="token combinator selector"],
+.notion-selectable.notion-code-block span[class="token selector language-css style"],
+.notion-selectable.notion-code-block span[class="token property language-css style"] {
+  color: #ABB2BF;
+  background-color: transparent;
+}
+
+/* 🎨 짙은 회색 (주석색) */
+.notion-selectable.notion-code-block span[class="token comment tag"] {
+  color: #708090;
+}
+
+/* 🎨 민트색 */
+.notion-selectable.notion-code-block span[class="token operator"],
+.notion-selectable.notion-code-block span[class="token script-punctuation punctuation script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token punctuation attr-equals attr-value tag"],
+.notion-selectable.notion-code-block span[class="token pseudo-class selector"],
+.notion-selectable.notion-code-block span[class="token pseudo-element selector"],
+.notion-selectable.notion-code-block span[class="token operator interpolation template-string script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token function color"],
+.notion-selectable.notion-code-block span[class="token function url"],
+.notion-selectable.notion-code-block span[class="token function language-css style"] {
+  color: #56B6C2;
+  background: transparent;
+}
+
+/* 🎨 배경 투명색 */
+.notion-selectable.notion-code-block span[class="token operator interpolation template-string script language-javascript tag"] {
+  background-color: transparent;
+}
