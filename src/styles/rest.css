@@ -98,3 +98,12 @@ span[style*="color:rgba(68, 131, 97, 1);"] {
 > div {
   line-height: 1.7;
 }
+
+/* 📄 콜아웃에서 연속된 글자 간격 조절 */
+.notion-selectable.notion-callout-block
+> div[role="note"]
+> div[style*="display: flex;"]
+> div[style*="display: flex;"]
+> div[style*="max-width: 100%"] {
+  line-height: 1.7;
+}
