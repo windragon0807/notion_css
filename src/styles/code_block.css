@@ -177,7 +177,8 @@
 .notion-selectable.notion-code-block span[class="token variable"],
 .notion-selectable.notion-code-block span[class="token atrule language-css style"],
 .notion-selectable.notion-code-block span[class="token unit language-css style"],
-.notion-selectable.notion-code-block span[class="token entity named-entity"] {
+.notion-selectable.notion-code-block span[class="token entity named-entity"],
+.notion-selectable.notion-code-block span[class="token constant parameter"] {
   color: #E06C75;
   background-color: transparent;
 }
