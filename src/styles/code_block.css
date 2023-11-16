@@ -178,7 +178,10 @@
 .notion-selectable.notion-code-block span[class="token atrule language-css style"],
 .notion-selectable.notion-code-block span[class="token unit language-css style"],
 .notion-selectable.notion-code-block span[class="token entity named-entity"],
-.notion-selectable.notion-code-block span[class="token constant parameter"] {
+.notion-selectable.notion-code-block span[class="token constant parameter"],
+.notion-selectable.notion-code-block span[class="token tag script language-javascript"],
+.notion-selectable.notion-code-block span[class="token literal-property property script language-javascript tag"]
+{
   color: #E06C75;
   background-color: transparent;
 }
@@ -216,7 +219,9 @@
 .notion-selectable.notion-code-block span[class="token builtin script language-javascript tag"],
 .notion-selectable.notion-code-block span[class="token constant"],
 .notion-selectable.notion-code-block span[class="token keyword generic class-name generic-function"],
-.notion-selectable.notion-code-block span[class="token constant script language-javascript tag"] {
+.notion-selectable.notion-code-block span[class="token constant script language-javascript tag"],
+.notion-selectable.notion-code-block span[class="token class-name tag script language-javascript"]
+{
   color: #E5C07B;
 }
 
@@ -256,7 +261,9 @@
 }
 
 /* 🟤 갈색 */
-.notion-selectable.notion-code-block span[class="token number"] {
+.notion-selectable.notion-code-block span[class="token number"],
+.notion-selectable.notion-code-block span[class="token attr-name tag script language-javascript"]
+{
   color: #D19A66;
 }
 
@@ -277,13 +284,18 @@
 .notion-selectable.notion-code-block span[class="token property atrule"],
 .notion-selectable.notion-code-block span[class="token combinator selector"],
 .notion-selectable.notion-code-block span[class="token selector language-css style"],
-.notion-selectable.notion-code-block span[class="token property language-css style"] {
+.notion-selectable.notion-code-block span[class="token property language-css style"],
+.notion-selectable.notion-code-block span[class="token punctuation tag script language-javascript"],
+.notion-selectable.notion-code-block span[class="token plain-text script language-javascript tag"]
+{
   color: #ABB2BF;
   background-color: transparent;
 }
 
 /* 🎨 짙은 회색 (주석색) */
-.notion-selectable.notion-code-block span[class="token comment tag"] {
+.notion-selectable.notion-code-block span[class="token comment tag"],
+.notion-selectable.notion-code-block span[class="token comment script language-javascript tag"]
+{
   color: #708090;
 }
 
